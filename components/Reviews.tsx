@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { motion, useReducedMotion, useAnimationControls } from 'motion/react';
 import { Star } from '@phosphor-icons/react';
