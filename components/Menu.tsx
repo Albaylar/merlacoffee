@@ -72,7 +72,7 @@ export default function Menu() {
                   delay: i * 0.04,
                   ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
                 }}
-                className="group relative rounded-2xl overflow-hidden bg-surface cursor-pointer"
+                className="group relative rounded-2xl overflow-hidden bg-surface cursor-pointer active:scale-[0.98] transition-transform"
               >
                 {/* Image */}
                 <div className="relative aspect-[4/3] overflow-hidden">

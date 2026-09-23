@@ -45,14 +45,14 @@ export default function Location() {
           {t('heading')}
         </motion.h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start">
           {/* Map */}
           <motion.div
             initial={reduce ? false : { opacity: 0, x: -32 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
-            className="rounded-2xl overflow-hidden aspect-[4/3] bg-zinc-800"
+            className="rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-[4/3] min-h-[200px] max-h-[360px] bg-zinc-800"
           >
             {/* Placeholder map — replace with real embed when address is known */}
             <iframe

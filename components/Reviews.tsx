@@ -52,7 +52,7 @@ export default function Reviews() {
 
       {/* Marquee track */}
       <div
-        className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
+        className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]"
         onMouseEnter={() => controls.stop()}
         onMouseLeave={() => {
           if (!reduce) {
@@ -62,13 +62,13 @@ export default function Reviews() {
       >
         <motion.div
           animate={controls}
-          className="flex gap-6"
+          className="flex gap-3 sm:gap-6"
           style={{ width: 'max-content' }}
         >
           {doubled.map((review, i) => (
             <div
               key={`${review.id}-${i}`}
-              className="w-[340px] flex-shrink-0 bg-surface rounded-2xl p-6 border border-zinc-800"
+              className="w-[80vw] sm:w-[340px] flex-shrink-0 bg-surface rounded-2xl p-6 border border-zinc-800"
             >
               {/* Stars */}
               <div className="flex gap-1 mb-4">
