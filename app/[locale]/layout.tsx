@@ -56,7 +56,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={outfit.variable}>
-      <body className="bg-bg text-zinc-50 font-body antialiased">
+      <body className="bg-bg text-text font-body antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
