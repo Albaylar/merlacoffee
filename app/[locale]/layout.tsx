@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Outfit } from 'next/font/google';
 import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
 import '../globals.css';
 
 const outfit = Outfit({
@@ -61,6 +62,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Nav />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
