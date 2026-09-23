@@ -4,6 +4,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Outfit } from 'next/font/google';
+import Nav from '@/components/Nav';
 import '../globals.css';
 
 const outfit = Outfit({
@@ -58,6 +59,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={outfit.variable}>
       <body className="bg-bg text-text font-body antialiased">
         <NextIntlClientProvider messages={messages}>
+          <Nav />
           {children}
         </NextIntlClientProvider>
       </body>
