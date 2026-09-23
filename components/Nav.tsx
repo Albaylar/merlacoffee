@@ -33,8 +33,12 @@ export default function Nav() {
 
   function switchLocale(newLocale: string) {
     const segments = pathname.split('/');
-    segments[1] = newLocale;
-    router.push(segments.join('/'));
+    if (LOCALES.includes(segments[1] as typeof LOCALES[number])) {
+      segments[1] = newLocale;
+      router.push(segments.join('/'));
+    } else {
+      router.push(`/${newLocale}`);
+    }
   }
 
   return (
@@ -70,6 +74,8 @@ export default function Nav() {
                 <button
                   key={l}
                   onClick={() => switchLocale(l)}
+                  aria-label={`Switch language to ${l}`}
+                  aria-pressed={locale === l}
                   className={`text-xs uppercase tracking-wider px-2 py-1 rounded transition-colors duration-200 ${
                     locale === l
                       ? 'text-zinc-50 bg-zinc-800'
@@ -108,7 +114,7 @@ export default function Nav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-[60] bg-zinc-950 flex flex-col px-6 py-8"
+            className="fixed inset-0 z-[60] bg-bg flex flex-col px-6 py-8"
           >
             <div className="flex items-center justify-between mb-12">
               <span className="font-display font-bold text-xl">Merla Coffee</span>
@@ -128,6 +134,7 @@ export default function Nav() {
                   href={href}
                   initial={reduce ? false : { opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
+                  exit={reduce ? undefined : { opacity: 0, x: -20 }}
                   transition={{ delay: i * 0.06, duration: 0.3 }}
                   onClick={() => setMenuOpen(false)}
                   className="text-3xl font-display font-medium tracking-tight text-zinc-200 hover:text-zinc-50 transition-colors"
@@ -142,6 +149,8 @@ export default function Nav() {
                 <button
                   key={l}
                   onClick={() => { switchLocale(l); setMenuOpen(false); }}
+                  aria-label={`Switch language to ${l}`}
+                  aria-pressed={locale === l}
                   className={`text-sm uppercase tracking-wider px-3 py-2 rounded transition-colors ${
                     locale === l ? 'text-zinc-50 bg-zinc-800' : 'text-zinc-500 hover:text-zinc-300'
                   }`}
