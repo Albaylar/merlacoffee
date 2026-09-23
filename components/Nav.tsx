@@ -97,7 +97,7 @@ export default function Nav() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden text-zinc-400 hover:text-zinc-50 transition-colors"
+            className="md:hidden text-zinc-400 hover:text-zinc-50 transition-colors -mr-2 p-2"
             onClick={() => setMenuOpen(true)}
             aria-label="Open menu"
           >
@@ -114,13 +114,13 @@ export default function Nav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-[60] bg-bg flex flex-col px-6 py-8"
+            className="fixed inset-0 z-[60] bg-bg flex flex-col px-6 pt-[max(2rem,env(safe-area-inset-top))] pb-8"
           >
             <div className="flex items-center justify-between mb-12">
               <span className="font-display font-bold text-xl">Merla Coffee</span>
               <button
                 onClick={() => setMenuOpen(false)}
-                className="text-zinc-400 hover:text-zinc-50 transition-colors"
+                className="text-zinc-400 hover:text-zinc-50 transition-colors p-2 -mr-2"
                 aria-label="Close menu"
               >
                 <X size={24} weight="light" />
@@ -151,7 +151,7 @@ export default function Nav() {
                   onClick={() => { switchLocale(l); setMenuOpen(false); }}
                   aria-label={`Switch language to ${l}`}
                   aria-pressed={locale === l}
-                  className={`text-sm uppercase tracking-wider px-3 py-2 rounded transition-colors ${
+                  className={`text-sm uppercase tracking-wider px-4 py-3 rounded transition-colors ${
                     locale === l ? 'text-zinc-50 bg-zinc-800' : 'text-zinc-500 hover:text-zinc-300'
                   }`}
                 >

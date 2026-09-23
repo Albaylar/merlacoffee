@@ -13,16 +13,16 @@ export default async function Footer() {
         <p className="text-xs text-zinc-500 order-last sm:order-none">{t('copyright')}</p>
 
         <div className="flex items-center gap-6">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-zinc-500 hover:text-zinc-300 transition-colors">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-zinc-500 hover:text-zinc-300 transition-colors p-2 -m-2">
             <InstagramLogo size={18} weight="light" />
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-zinc-500 hover:text-zinc-300 transition-colors">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-zinc-500 hover:text-zinc-300 transition-colors p-2 -m-2">
             <FacebookLogo size={18} weight="light" />
           </a>
-          <Link href={`/${locale}/impressum`} className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors">
+          <Link href={`/${locale}/impressum`} className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors py-1">
             {t('impressum')}
           </Link>
-          <Link href={`/${locale}/datenschutz`} className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors">
+          <Link href={`/${locale}/datenschutz`} className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors py-1">
             {t('datenschutz')}
           </Link>
         </div>
