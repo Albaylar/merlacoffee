@@ -67,9 +67,18 @@ export default function About() {
             {t('heading')}
           </h2>
           <div className="space-y-4 max-w-[55ch]">
-            <p className="text-zinc-400 leading-relaxed">{t('p1')}</p>
-            <p className="text-zinc-400 leading-relaxed">{t('p2')}</p>
-            <p className="text-zinc-400 leading-relaxed">{t('p3')}</p>
+            {(['p1', 'p2', 'p3'] as const).map((key, i) => (
+              <motion.p
+                key={key}
+                initial={reduce ? false : { opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.65, ease: cubicEase, delay: 0.15 + i * 0.12 }}
+                className="text-zinc-400 leading-relaxed"
+              >
+                {t(key)}
+              </motion.p>
+            ))}
           </div>
         </motion.div>
 
@@ -85,7 +94,7 @@ export default function About() {
           className="relative aspect-[4/5] rounded-2xl overflow-hidden cursor-none"
         >
           <Image
-            src="https://picsum.photos/seed/merla-coffee-about/800/1000"
+            src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&h=1000&q=85&auto=format&fit=crop"
             alt="Merla Coffee atmosphere"
             fill
             className="object-cover"

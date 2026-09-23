@@ -64,12 +64,12 @@ export default function Menu() {
               <motion.div
                 key={item.id}
                 layout
-                initial={reduce ? false : { opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.95 }}
+                initial={reduce ? false : { opacity: 0, y: 32, scale: 0.97 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95, y: -8 }}
                 transition={{
-                  duration: 0.4,
-                  delay: i * 0.04,
+                  duration: 0.45,
+                  delay: i * 0.06,
                   ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
                 }}
                 className="group relative rounded-2xl overflow-hidden bg-surface cursor-pointer active:scale-[0.98] transition-transform"
