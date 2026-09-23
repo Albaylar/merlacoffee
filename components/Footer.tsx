@@ -1,11 +1,9 @@
-import { useTranslations } from 'next-intl';
-import { getLocale } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import { InstagramLogo, FacebookLogo } from '@phosphor-icons/react/dist/ssr';
 
 export default async function Footer() {
-  const t = useTranslations('footer');
-  const locale = await getLocale();
+  const [t, locale] = await Promise.all([getTranslations('footer'), getLocale()]);
 
   return (
     <footer className="bg-zinc-900 border-t border-zinc-800 py-8 px-6">
