@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Menu from '@/components/Menu';
+import Location from '@/components/Location';
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
       <Hero />
       <About />
       <Menu />
+      <Location />
     </main>
   );
 }
