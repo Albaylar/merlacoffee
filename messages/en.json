@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "about": "About",
+    "location": "Location",
+    "contact": "Contact",
+    "reservation": "Reservation"
+  },
+  "hero": {
+    "tagline": "Specialty Coffee. Every Day.",
+    "cta": "Explore the Menu"
+  },
+  "about": {
+    "eyebrow": "Our Story",
+    "heading": "Merla Coffee",
+    "p1": "We believe a good coffee is more than a drink. It is a moment of stillness, pleasure, and connection.",
+    "p2": "Every cup is crafted with care — from the selection of beans to the last sip.",
+    "p3": "Welcome to Merla."
+  },
+  "menu": {
+    "heading": "Menu",
+    "categories": {
+      "all": "All",
+      "coffee": "Coffee",
+      "tea": "Tea",
+      "food": "Food",
+      "dessert": "Desserts"
+    }
+  },
+  "location": {
+    "heading": "Find Us",
+    "address": "Address coming soon",
+    "copyAddress": "Copy address",
+    "copied": "Copied",
+    "hours": {
+      "heading": "Opening Hours",
+      "mon": "Monday",
+      "tue": "Tuesday",
+      "wed": "Wednesday",
+      "thu": "Thursday",
+      "fri": "Friday",
+      "sat": "Saturday",
+      "sun": "Sunday",
+      "closed": "Closed",
+      "monFri": "08:00 - 18:00"
+    }
+  },
+  "reviews": {
+    "heading": "What Our Guests Say"
+  },
+  "contact": {
+    "heading": "Get in Touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent",
+    "error": "Failed to send"
+  },
+  "footer": {
+    "impressum": "Imprint",
+    "datenschutz": "Privacy Policy",
+    "copyright": "© 2026 Merla Coffee. All rights reserved."
+  },
+  "impressum": {
+    "heading": "Imprint",
+    "placeholder": "Legal information coming soon."
+  },
+  "datenschutz": {
+    "heading": "Privacy Policy",
+    "placeholder": "Privacy policy coming soon."
+  }
+}

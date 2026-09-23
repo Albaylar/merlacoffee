@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "menu": "Speisekarte",
+    "about": "Über uns",
+    "location": "Standort",
+    "contact": "Kontakt",
+    "reservation": "Reservierung"
+  },
+  "hero": {
+    "tagline": "Specialty Coffee. Jeden Tag.",
+    "cta": "Speisekarte entdecken"
+  },
+  "about": {
+    "eyebrow": "Unsere Geschichte",
+    "heading": "Merla Coffee",
+    "p1": "Wir glauben, dass ein guter Kaffee mehr ist als ein Getränk. Er ist ein Moment der Stille, des Genusses und der Verbindung.",
+    "p2": "Jede Tasse wird mit Sorgfalt zubereitet — von der Auswahl der Bohnen bis zum letzten Schluck.",
+    "p3": "Willkommen bei Merla."
+  },
+  "menu": {
+    "heading": "Speisekarte",
+    "categories": {
+      "all": "Alle",
+      "coffee": "Kaffee",
+      "tea": "Tee",
+      "food": "Speisen",
+      "dessert": "Desserts"
+    }
+  },
+  "location": {
+    "heading": "Wo wir sind",
+    "address": "Adresse folgt in Kürze",
+    "copyAddress": "Adresse kopieren",
+    "copied": "Kopiert",
+    "hours": {
+      "heading": "Öffnungszeiten",
+      "mon": "Montag",
+      "tue": "Dienstag",
+      "wed": "Mittwoch",
+      "thu": "Donnerstag",
+      "fri": "Freitag",
+      "sat": "Samstag",
+      "sun": "Sonntag",
+      "closed": "Geschlossen",
+      "monFri": "08:00 - 18:00"
+    }
+  },
+  "reviews": {
+    "heading": "Was unsere Gäste sagen"
+  },
+  "contact": {
+    "heading": "Schreib uns",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Senden",
+    "sending": "Wird gesendet...",
+    "success": "Nachricht gesendet",
+    "error": "Fehler beim Senden"
+  },
+  "footer": {
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "copyright": "© 2026 Merla Coffee. Alle Rechte vorbehalten."
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "placeholder": "Angaben gemäß § 5 TMG folgen in Kürze."
+  },
+  "datenschutz": {
+    "heading": "Datenschutzerklärung",
+    "placeholder": "Datenschutzerklärung folgt in Kürze."
+  }
+}

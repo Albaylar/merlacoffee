@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "menu": "Menü",
+    "about": "Hakkımızda",
+    "location": "Konum",
+    "contact": "İletişim",
+    "reservation": "Rezervasyon"
+  },
+  "hero": {
+    "tagline": "Specialty Kahve. Her Gün.",
+    "cta": "Menüyü Keşfet"
+  },
+  "about": {
+    "eyebrow": "Hikayemiz",
+    "heading": "Merla Coffee",
+    "p1": "İyi bir kahvenin sadece bir içecekten fazlası olduğuna inanıyoruz. O, bir dinginlik, zevk ve bağlantı anıdır.",
+    "p2": "Her fincan özenle hazırlanır — çekirdek seçiminden son yuduma kadar.",
+    "p3": "Merla'ya hoş geldiniz."
+  },
+  "menu": {
+    "heading": "Menü",
+    "categories": {
+      "all": "Tümü",
+      "coffee": "Kahveler",
+      "tea": "Çaylar",
+      "food": "Yiyecekler",
+      "dessert": "Tatlılar"
+    }
+  },
+  "location": {
+    "heading": "Neredeyiz",
+    "address": "Adres yakında eklenecek",
+    "copyAddress": "Adresi kopyala",
+    "copied": "Kopyalandı",
+    "hours": {
+      "heading": "Çalışma Saatleri",
+      "mon": "Pazartesi",
+      "tue": "Salı",
+      "wed": "Çarşamba",
+      "thu": "Perşembe",
+      "fri": "Cuma",
+      "sat": "Cumartesi",
+      "sun": "Pazar",
+      "closed": "Kapalı",
+      "monFri": "08:00 - 18:00"
+    }
+  },
+  "reviews": {
+    "heading": "Misafirlerimiz Ne Diyor"
+  },
+  "contact": {
+    "heading": "Bize Yazın",
+    "name": "Ad Soyad",
+    "email": "E-posta",
+    "message": "Mesaj",
+    "send": "Gönder",
+    "sending": "Gönderiliyor...",
+    "success": "Mesaj gönderildi",
+    "error": "Gönderilemedi"
+  },
+  "footer": {
+    "impressum": "Künye",
+    "datenschutz": "Gizlilik Politikası",
+    "copyright": "© 2026 Merla Coffee. Tüm hakları saklıdır."
+  },
+  "impressum": {
+    "heading": "Künye",
+    "placeholder": "Yasal bilgiler yakında eklenecek."
+  },
+  "datenschutz": {
+    "heading": "Gizlilik Politikası",
+    "placeholder": "Gizlilik politikası yakında eklenecek."
+  }
+}
