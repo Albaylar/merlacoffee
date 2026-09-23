@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, Geist_Mono } from "next/font/google";
+import type React from "react";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   description: "Merla Coffee – premium specialty coffee",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="de"
