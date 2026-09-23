@@ -3,6 +3,7 @@ import About from '@/components/About';
 import Menu from '@/components/Menu';
 import Location from '@/components/Location';
 import Reviews from '@/components/Reviews';
+import Contact from '@/components/Contact';
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Menu />
       <Location />
       <Reviews />
+      <Contact />
     </main>
   );
 }
