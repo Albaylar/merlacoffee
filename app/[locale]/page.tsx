@@ -1,7 +1,9 @@
+import Hero from '@/components/Hero';
+
 export default function HomePage() {
   return (
     <main>
-      {/* Sections added task by task */}
+      <Hero />
     </main>
   );
 }
