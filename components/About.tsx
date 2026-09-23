@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, useMotionValue, useTransform, useReducedMotion } from 'motion/react';
 import Image from 'next/image';
@@ -8,13 +9,19 @@ export default function About() {
   const t = useTranslations('about');
   const reduce = useReducedMotion();
 
+  const [isTouch, setIsTouch] = useState(false);
+
+  useEffect(() => {
+    setIsTouch(window.matchMedia('(hover: none)').matches);
+  }, []);
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-100, 100], [4, -4]);
   const rotateY = useTransform(x, [-100, 100], [-4, 4]);
 
   function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
-    if (reduce) return;
+    if (reduce || isTouch) return;
     const rect = e.currentTarget.getBoundingClientRect();
     x.set(e.clientX - rect.left - rect.width / 2);
     y.set(e.clientY - rect.top - rect.height / 2);
@@ -72,7 +79,7 @@ export default function About() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          style={reduce ? {} : { rotateX, rotateY, transformStyle: 'preserve-3d' }}
+          style={reduce || isTouch ? {} : { rotateX, rotateY, transformStyle: 'preserve-3d' }}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           className="relative aspect-[4/5] rounded-2xl overflow-hidden cursor-none"

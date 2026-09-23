@@ -55,13 +55,14 @@ export default function Contact() {
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
-              <label className="text-xs uppercase tracking-[0.15em] text-zinc-500" htmlFor="name">
+              <label className="text-xs uppercase tracking-[0.15em] text-zinc-500 block mb-1" htmlFor="name">
                 {t('name')}
               </label>
               <input
                 id="name"
                 type="text"
                 required
+                autoComplete="name"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 className="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-zinc-500 transition-colors text-sm"
@@ -69,13 +70,15 @@ export default function Contact() {
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs uppercase tracking-[0.15em] text-zinc-500" htmlFor="email">
+              <label className="text-xs uppercase tracking-[0.15em] text-zinc-500 block mb-1" htmlFor="email">
                 {t('email')}
               </label>
               <input
                 id="email"
                 type="email"
                 required
+                autoComplete="email"
+                inputMode="email"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 className="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-zinc-500 transition-colors text-sm"
@@ -83,13 +86,14 @@ export default function Contact() {
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs uppercase tracking-[0.15em] text-zinc-500" htmlFor="message">
+              <label className="text-xs uppercase tracking-[0.15em] text-zinc-500 block mb-1" htmlFor="message">
                 {t('message')}
               </label>
               <textarea
                 id="message"
                 rows={5}
                 required
+                autoComplete="off"
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 className="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-zinc-500 transition-colors text-sm resize-none"
